@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel Toor</title>
+</head>
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="index.html"><img src="images/bag.png" alt="">Toor</a>
+            </div>
+
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#package">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__btn">
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+        <div class="header__content">
+            <h2><span>Let's</span> Create Memorable Journey</h2>
+            <p class="section__description">
+                Embark on an unforgettable adventure with us! Discover breathtaking destinations, create lasting memories, and make every journey remarkable.
+            </p>
+
+            <form action="#contact">
+                <div class="input__group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Uruzgan" required>
+                </div>
+                <div class="input__group">
+                    <label for="date">Date</label>
+                    <input type="text" id="date" placeholder="1th Mar, Fri" required>
+                </div>
+                <div class="input__group">
+                    <label for="price">Price</label>
+                    <input type="text" id="price" placeholder="10,000 Af" required>
+                </div>
+
+                <button class="btn"><i class="ri-search-line"></i></button>
+            </form>
+        </div>
+        <div class="header__images">
+            <img src="images/header-1.jpg" alt="">
+            <img src="images/header-2.jpg" alt="">
+            <img src="images/bg.png" alt="">
+        </div>
+    </header>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
