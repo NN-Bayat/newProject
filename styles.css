@@ -332,7 +332,7 @@ nav {
     position: relative;
     isolation: isolate;
     padding-block: 3rem 2rem;
-    padding-inline: 2rem;
+    padding-inline: 1.5rem;
 }
 
 .popular__rating {
@@ -381,7 +381,7 @@ nav {
 .popular__card_footer div{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: var(--text-light);
 }
 
