@@ -27,7 +27,7 @@ ScrollReveal().reveal(".header__content h1", {
     delay: 800,
 });
 
-ScrollReveal().reveal(".section__description", {
+ScrollReveal().reveal(".header__content .section__description", {
     distance: "50px",
     duration: 1000,
     origin: "bottom",
@@ -75,8 +75,44 @@ const swiper = new Swiper(".swiper", {
     loop: true,
 })
 
+ScrollReveal().reveal(".explore__image img", {
+    distance: "50px",
+    origin: "right",
+    delay: 500,
+});
 
+ScrollReveal().reveal(".explore__content .section__sub_header", {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    delay: 1000,
+});
 
+ScrollReveal().reveal(".explore__content .section__header", {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    delay: 1500,
+});
 
+ScrollReveal().reveal(".explore__content .section__description", {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    delay: 2000,
+});
+
+ScrollReveal().reveal(".explore__content .explore__btn", {
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    delay: 2250,
+});
+
+ScrollReveal().reveal(".explore__grid div", {
+    duration: 1000,
+    delay: 2600,
+    interval: 500,
+});
 
 
