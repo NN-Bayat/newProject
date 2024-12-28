@@ -69,7 +69,11 @@ ScrollReveal().reveal(".choose__list li", {
     interval: 800,
 });
 
-
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 3,
+    spaceBetween: 3,
+    loop: true,
+})
 
 
 
