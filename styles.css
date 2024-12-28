@@ -144,6 +144,165 @@ nav {
     display: none;
 }
 
+.header__container {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.header__content h1 {
+    margin-bottom: 2rem;
+    font-size: 3.5rem;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.header__content h1 span {
+    text-decoration: underline var(--primary-color);
+}
+
+.header__content .section__description {
+    text-align: center;
+}
+
+.header__content form {
+    margin-top: 4rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header__content .input__group {
+    flex: 1 0 125px;
+    display: grid;
+    gap: 1rem;
+}
+
+.header__content label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.header__content input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: var(--text-light);
+    outline: none;
+    font-size: 1rem;
+}
+
+.header__content input::placeholder {
+    color: var(--text-light);
+}
+
+.header__content .btn {
+    padding: 13px 15px;
+    font-size: 1.75rem;
+    border-radius: 1rem;
+}
+
+.header__images {
+    position: relative;
+    isolation: isolate;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 90px;
+}
+
+.header__images img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header__images img:nth-child(1) {
+    grid-area: 1/1/4/3;
+}
+
+.header__images img:nth-child(2) {
+    grid-area: 4/1/7/3;
+}
+
+.header__images img:nth-child(3) {
+    grid-area: 2/3/6/6;
+}
+
+.header__images img:nth-child(4) {
+    position: absolute;
+    top: -1.5rem;
+    right: 4rem;
+    height: 10rem;
+    width: unset;
+    object-fit: contain;
+    box-shadow: none;
+    aspect-ratio: 1;
+}
+
+.choose__container{
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.choose__image img{
+    width: 455px;
+    margin-inline: auto;
+    border-radius: 2rem;
+    box-shadow: 30px -30px 0px rgba(0, 0, 0, 0.1);
+}
+
+.choose__list{
+    margin-top: 4rem;
+    display: grid;
+    gap: 3rem;
+}
+
+.choose__list li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.choose__list li span{
+    display: inline-block;
+    padding: 6px 14px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+.choose__list li h4{
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.choose__list li p{
+    color: var(--text-light);
+    width: 87%;
+}
+
+
+
+
+
+
+
+
+
 /* -------------------------------- */
 
 @media (width > 768px) {
@@ -190,7 +349,7 @@ nav {
         font-weight: 600;
     }
 
-    .nav__links a:hover{
+    .nav__links a:hover {
         color: var(--primary-color);
     }
 
@@ -205,28 +364,52 @@ nav {
         transition: all 0.5s ease-in-out;
         transform-origin: left;
     }
-    
-    .nav__links a:hover::after{
+
+    .nav__links a:hover::after {
         width: 100%;
     }
 
-.nav__btn{
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
+    .nav__btn {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .header__container {
+        padding-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        isolation: isolate;
+    }
+
+    .header__content {
+        position: relative;
+        padding-bottom: 10rem;
+    }
+
+    .header__content :is(h1, .section__description) {
+        text-align: left;
+    }
+
+    .header__content form {
+        position: absolute;
+        width: max-content;
+        padding: 1.5rem;
+        margin: 0;
+        bottom: 0;
+        border-radius: 1.5rem;
+        backdrop-filter: blur(5px);
+        z-index: 10;
+    }
+
+.choose__container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.choose__list li p{
+    width: 100%;
+}
 
 
 
