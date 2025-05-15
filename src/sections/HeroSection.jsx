@@ -16,7 +16,7 @@ const HeroSection = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
 
   return (
-    <section className="w-full h-full flex items-center justify-center bg-[#f1f6f1]">
+    <section id="hero" className="w-full h-full flex items-center justify-center bg-[#f1f6f1]">
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px]">
         <div className="flex flex-col gap-y-20 lg:pt-50 pt-40">
           <div className="flex w-full flex-col-reverse lg:flex-row">
