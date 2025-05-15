@@ -2,6 +2,8 @@ import { BsEasel } from "react-icons/bs";
 import { LuCommand, LuMapPin } from "react-icons/lu";
 import { MdOutlinePlayCircleOutline } from "react-icons/md";
 import { SlDiamond } from "react-icons/sl";
+import VideoModal from "../components/VideoModal";
+import { useState } from "react";
 
 const heroBoxes = [
   { icon: <BsEasel />, text: "Creative Design" },
@@ -11,6 +13,8 @@ const heroBoxes = [
 ];
 
 const HeroSection = () => {
+  const [showVideoModal, setShowVideoModal] = useState(false);
+
   return (
     <section className="w-full h-full flex items-center justify-center bg-[#f1f6f1]">
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px]">
@@ -31,6 +35,7 @@ const HeroSection = () => {
                   Get Started
                 </button>
                 <button
+                  onClick={() => setShowVideoModal(true)}
                   className="text-[#71c55d] cursor-pointer capitalize flex items-center gap-1.5 whitespace-nowrap w-fit"
                   aria-label="Watch video"
                 >
@@ -45,6 +50,7 @@ const HeroSection = () => {
               <img
                 src="/hero-img.png"
                 alt="Illustration showing a startup team collaborating"
+                aria-hidden="true"
                 className="sm:w-[90%] mx-auto"
               />
             </div>
@@ -66,6 +72,10 @@ const HeroSection = () => {
               </div>
             ))}
           </div>
+
+          {showVideoModal && (
+            <VideoModal onClose={() => setShowVideoModal(false)} />
+          )}
         </div>
       </div>
     </section>
