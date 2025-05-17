@@ -1,9 +1,29 @@
 import { FaAngleDown } from "react-icons/fa";
 import { NavItems } from "../constant";
+import { useEffect, useRef } from "react";
 
 const Navbar = () => {
+  const navbarShadow = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        navbarShadow.current.classList.add("shadow-lg");
+      } else {
+        navbarShadow.current.classList.remove("shadow-lg");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className="fixed top-0 left-0 right-0 bg-white z-50">
+    <section
+      ref={navbarShadow}
+      className="fixed top-0 left-0 right-0 bg-white z-50 transition-all duration-300 ease-in-out shadow-gray-200"
+    >
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px]">
         <div className="flex items-center justify-between py-3 md:py-5 lg:py-7">
           <a href="/" className="text-3xl font-semibold">
