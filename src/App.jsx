@@ -1,6 +1,7 @@
 import React from "react";
 import HeroSection from "./sections/HeroSection";
 import Navbar from "./sections/Navbar";
+import AboutSection from "./sections/AboutSection";
 
 const App = () => {
   return (
@@ -9,6 +10,9 @@ const App = () => {
         <Navbar />
         <HeroSection />
       </header>
+      <main className="h-full">
+        <AboutSection />
+      </main>
     </>
   );
 };
