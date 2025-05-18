@@ -20,7 +20,7 @@ const AboutSection = () => {
   return (
     <section
       id="about"
-      className="w-full h-full flex items-center justify-center bg-white"
+      className="w-full h-full flex items-center justify-center bg-white scroll-mt-23"
     >
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px] w-full">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 py-[5%]">
@@ -56,15 +56,15 @@ const AboutSection = () => {
           </div>
 
           {/* ABOUT IMAGE */}
-          <div className="lg:w-1/2 flex flex-col lg:flex-row gap-6">
-            <div className="lg:w-1/2">
+          <div className="lg:w-1/2 flex flex-col md:flex-row gap-6">
+            <div className="md:w-1/2">
               <img
                 src="/about/about-1.jpg"
                 alt="About Image"
                 className="size-full object-cover rounded-xl"
               />
             </div>
-            <div className="lg:w-1/2 flex flex-col gap-6">
+            <div className="md:w-1/2 flex flex-col gap-6">
               <div className="h-1/2">
                 <img
                   src="/about/about-2.jpg"
