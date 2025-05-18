@@ -88,3 +88,24 @@ export const srvCards = [
     disc: "Enhance collaboration through fast and secure messaging solutions for teams and customers alike.",
   },
 ];
+
+export const fchrCards = [
+  {
+    title: "Blazing Fast Speed",
+  },
+  {
+    title: "Modern UI Design",
+  },
+  {
+    title: "Responsive Layouts",
+  },
+  {
+    title: "Top-Notch Security",
+  },
+  {
+    title: "Easy Customization",
+  },
+  {
+    title: "24/7 Support",
+  },
+];

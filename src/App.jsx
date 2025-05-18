@@ -3,6 +3,7 @@ import HeroSection from "./sections/HeroSection";
 import Navbar from "./sections/Navbar";
 import AboutSection from "./sections/AboutSection";
 import ServicesSection from "./sections/ServicesSection";
+import FeaturesSection from "./sections/FeaturesSection";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <main className="h-full">
         <AboutSection />
         <ServicesSection />
+        <FeaturesSection />
       </main>
     </>
   );
