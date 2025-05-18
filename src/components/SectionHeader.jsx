@@ -5,7 +5,7 @@ const SectionHeader = ({ title, subTitle }) => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-5">
-      <h4 className="uppercase text-[13px] tracking-wide font-bold rounded-full px-4 pt-1.5 pb-1 bg-[#f0f9ee] text-[#71c55d]">
+      <h4 className="uppercase text-[13px] tracking-wide font-bold rounded-full px-4 pt-1.5 pb-1 bg-[#d6f5cf9c] text-[#71c55d]">
         {title}
       </h4>
       <h1 className="capitalize text-4xl font-semibold text-center">
