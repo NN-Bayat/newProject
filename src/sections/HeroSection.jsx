@@ -16,7 +16,7 @@ const HeroSection = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
 
   return (
-    <section id="hero" className="w-full h-full flex items-center justify-center bg-[#f1f6f1]">
+    <section id="home" className="w-full h-full flex items-center justify-center bg-[#f1f6f1]">
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px]">
         <div className="flex flex-col gap-y-20 lg:pt-50 pt-40">
           <div className="flex w-full flex-col-reverse lg:flex-row">
@@ -57,11 +57,11 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Boxes */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
             {heroBoxes.map((item, index) => (
               <div
                 key={index}
-                className="bg-white py-14 shadow-2xl rounded-[10px] flex items-center justify-center flex-col gap-5 hover:bg-[#71c55d] transition-all duration-300 ease-in-out group"
+                className="bg-white py-14 boxShadow rounded-[10px] flex items-center justify-center flex-col gap-5 hover:bg-[#71c55d] transition-all duration-300 ease-in-out group"
               >
                 <div className="text-5xl text-[#71c55d] group-hover:text-white transition duration-300">
                   {item.icon}
