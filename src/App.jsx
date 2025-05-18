@@ -4,6 +4,7 @@ import Navbar from "./sections/Navbar";
 import AboutSection from "./sections/AboutSection";
 import ServicesSection from "./sections/ServicesSection";
 import FeaturesSection from "./sections/FeaturesSection";
+import PricingSection from "./sections/PricingSection";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <AboutSection />
         <ServicesSection />
         <FeaturesSection />
+        <PricingSection />
       </main>
     </>
   );
