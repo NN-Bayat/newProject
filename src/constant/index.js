@@ -173,3 +173,44 @@ export const priceItems = [
     color: "#0d6efd",
   },
 ];
+
+export const accordionItems = [
+  {
+    question: "What payment methods do you accept?",
+    answer: "We accept Visa, MasterCard, PayPal, and Apple Pay.",
+  },
+  {
+    question: "Can I update my account information?",
+    answer:
+      "Yes, you can update your name, email, and password from your account settings.",
+  },
+  {
+    question: "Is there a mobile app available?",
+    answer: "Yes, you can download our app on both iOS and Android devices.",
+  },
+  {
+    question: "How long does shipping take?",
+    answer:
+      "Orders are delivered within 3–5 business days, depending on your location.",
+  },
+  {
+    question: "Can I get a refund?",
+    answer:
+      "Yes, refunds are issued within 5–7 business days after we receive your return.",
+  },
+];
+
+export const contactInfo = [
+  {
+    title: "address",
+    info: "A13 Herat, Afghanistan, Saadat 16th",
+  },
+  {
+    title: "Call Us",
+    info: "0093 123 456 789",
+  },
+  {
+    title: "Email Us",
+    info: "info@example.com",
+  },
+];
