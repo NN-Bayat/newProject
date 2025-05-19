@@ -109,3 +109,67 @@ export const fchrCards = [
     title: "24/7 Support",
   },
 ];
+
+export const priceItems = [
+  {
+    title: "Free Plan",
+    price: 0,
+    features: [
+      "Basic support",
+      "Access to core features",
+      "Standard customization",
+      "Team collaboration tools",
+      "Priority updates",
+    ],
+    availableFeatures: [true, true, true, false, false],
+    buttonText: "Get Started",
+    highlighted: false,
+    color: "#20c997",
+  },
+  {
+    title: "Starter Plan",
+    price: 19,
+    features: [
+      "Basic support",
+      "Access to core features",
+      "Standard customization",
+      "Team collaboration tools",
+      "Priority updates",
+    ],
+    availableFeatures: [true, true, true, true, false],
+    buttonText: "Buy Now",
+    highlighted: true,
+    label: "Featured",
+    color: "#0dcaf0",
+  },
+  {
+    title: "Business Plan",
+    price: 29,
+    features: [
+      "Basic support",
+      "Access to core features",
+      "Standard customization",
+      "Team collaboration tools",
+      "Priority updates",
+    ],
+    availableFeatures: [true, true, true, true, true],
+    buttonText: "Buy Now",
+    highlighted: false,
+    color: "#fd7e14",
+  },
+  {
+    title: "Ultimate Plan",
+    price: 49,
+    features: [
+      "Basic support",
+      "Access to core features",
+      "Standard customization",
+      "Team collaboration tools",
+      "Priority updates",
+    ],
+    availableFeatures: [true, true, true, true, true],
+    buttonText: "Buy Now",
+    highlighted: false,
+    color: "#0d6efd",
+  },
+];

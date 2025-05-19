@@ -6,7 +6,7 @@ const FeaturesSection = () => {
   return (
     <section
       id="features"
-      className="w-full h-full flex items-center justify-center bg-[#f1f6f1] py-10 scroll-mt-12"
+      className="w-full h-full flex items-center justify-center bg-[#f1f6f1] py-10 scroll-mt-22"
     >
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px] w-full">
         <div>
