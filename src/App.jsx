@@ -6,6 +6,7 @@ import ServicesSection from "./sections/ServicesSection";
 import FeaturesSection from "./sections/FeaturesSection";
 import PricingSection from "./sections/PricingSection";
 import Accordion from "./sections/Accordion";
+import ContactSection from "./sections/ContactSection";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <FeaturesSection />
         <PricingSection />
         <Accordion />
+        <ContactSection />
       </main>
     </>
   );

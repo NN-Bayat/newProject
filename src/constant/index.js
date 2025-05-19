@@ -199,3 +199,18 @@ export const accordionItems = [
       "Yes, refunds are issued within 5–7 business days after we receive your return.",
   },
 ];
+
+export const contactInfo = [
+  {
+    title: "address",
+    info: "A13 Herat, Afghanistan, Saadat 16th",
+  },
+  {
+    title: "Call Us",
+    info: "0093 123 456 789",
+  },
+  {
+    title: "Email Us",
+    info: "info@example.com",
+  },
+];
