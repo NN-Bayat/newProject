@@ -5,20 +5,28 @@ import AboutSection from "./sections/AboutSection";
 import ServicesSection from "./sections/ServicesSection";
 import FeaturesSection from "./sections/FeaturesSection";
 import PricingSection from "./sections/PricingSection";
+import Accordion from "./sections/Accordion";
+import ContactSection from "./sections/ContactSection";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
     <>
-      <header className="h-full">
+      <header>
         <Navbar />
         <HeroSection />
       </header>
-      <main className="h-full">
+      <main>
         <AboutSection />
         <ServicesSection />
         <FeaturesSection />
         <PricingSection />
+        <Accordion />
+        <ContactSection />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

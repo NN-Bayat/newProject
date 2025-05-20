@@ -27,7 +27,7 @@ const PricingSection = () => {
             {priceItems.map((item, index) => (
               <div
                 key={index}
-                className="boxShadow relative overflow-hidden flex items-center justify-center flex-col gap-7 py-12 rounded hover:scale-110 transition-all duration-300"
+                className="boxShadow relative overflow-hidden flex items-center justify-center flex-col gap-7 py-12 rounded lg:hover:scale-110 hover:scale-105 transition-all duration-300"
               >
                 <h4 className="text-xl font-bold" style={{ color: item.color }}>
                   {item.title}
@@ -64,7 +64,7 @@ const PricingSection = () => {
                 </ul>
                 <button>
                   <a
-                    className="border border-[#71c55d] rounded-full pt-2 pb-2.5 px-8 text-[#71c55d] font-semibold text-lg"
+                    className="border border-[#71c55d] rounded-full pt-2 pb-2.5 px-8 text-[#71c55d] font-semibold text-lg hover:bg-[#71c55d] hover:text-white transition-all duration-300"
                     href="/"
                   >
                     {item.buttonText}

@@ -2,21 +2,25 @@ import { BsEasel } from "react-icons/bs";
 import { LuCommand, LuMapPin } from "react-icons/lu";
 import { MdOutlinePlayCircleOutline } from "react-icons/md";
 import { SlDiamond } from "react-icons/sl";
-import VideoModal from "../components/VideoModal";
+import { heroBoxesItems } from "../constant";
 import { useState } from "react";
+import VideoModal from "../components/VideoModal";
 
-const heroBoxes = [
-  { icon: <BsEasel />, text: "Creative Design" },
-  { icon: <SlDiamond />, text: "Premium Quality" },
-  { icon: <LuMapPin />, text: "Global Reach" },
-  { icon: <LuCommand />, text: "Smart Solutions" },
+const heroBoxesIcons = [
+  { icon: <BsEasel /> },
+  { icon: <SlDiamond /> },
+  { icon: <LuMapPin /> },
+  { icon: <LuCommand /> },
 ];
 
 const HeroSection = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
 
   return (
-    <section id="home" className="w-full h-full flex items-center justify-center bg-[#f1f6f1]">
+    <section
+      id="home"
+      className="w-full h-full flex items-center justify-center bg-[#f1f6f1]"
+    >
       <div className="px-3 sm:px-[10%] lg:px-[10%] xl:px-[150px]">
         <div className="flex flex-col gap-y-20 lg:pt-50 pt-40">
           <div className="flex w-full flex-col-reverse lg:flex-row">
@@ -58,16 +62,16 @@ const HeroSection = () => {
 
           {/* Hero Boxes */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
-            {heroBoxes.map((item, index) => (
+            {heroBoxesItems.map((item, index) => (
               <div
                 key={index}
                 className="bg-white py-14 boxShadow rounded-[10px] flex items-center justify-center flex-col gap-5 hover:bg-[#71c55d] transition-all duration-300 ease-in-out group"
               >
                 <div className="text-5xl text-[#71c55d] group-hover:text-white transition duration-300">
-                  {item.icon}
+                  {heroBoxesIcons[index].icon}
                 </div>
                 <p className="text-2xl font-bold text-gray-600 group-hover:text-white transition duration-300">
-                  {item.text}
+                  {item.title}
                 </p>
               </div>
             ))}
