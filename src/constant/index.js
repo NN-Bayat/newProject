@@ -1,3 +1,14 @@
+export const heroBoxesItems = [
+  { title: "Creative Design" },
+  {
+    title: "Premium Quality",
+  },
+  { title: "Global Reach" },
+  {
+    title: "Smart Solutions",
+  },
+];
+
 export const NavItems = [
   {
     title: "Home",

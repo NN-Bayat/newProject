@@ -40,9 +40,9 @@ const ContactSection = () => {
               </div>
             ))}
           </div>
-          <div className="w-full">
+          <div className="w-full px-[8%] sm:px-0">
             <form action="" className="flex flex-col gap-6">
-              <div className="w-full flex justify-between gap-7">
+              <div className="w-full flex flex-col sm:flex-row justify-between gap-7">
                 <input
                   type="text"
                   className="text-lg font-medium border w-full border-gray-400 px-3 py-1.5 placeholder:font-normal focus:border-[#71c55d] focus:outline-none"
